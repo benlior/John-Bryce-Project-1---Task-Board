@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--my css-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12866d3651.js" crossorigin="anonymous"></script>
+    <!--bootstrap buttons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- google font name - cursive-->
+        <link rel="preConnect" href="https://fonts.googleapis.com">
+        <link rel="preConnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+        
+        
+    <title>My Task Board</title>
+    
+
+</head>
+
+
+<body>
+    <div class="myTitle">
+        <h1 class="text-center title"><strong>My Task Board</strong></h1>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+
+        <main>
+            <div class="row g-0">
+                <div class="col-10">
+                    <form id="form">
+                        <div class="col">
+                            <textarea id="task" placeholder="Please Type Here New Task..." required></textarea>
+                        </div>
+                        <div class="col" id="do-date">
+                            <label><strong> Date :</strong></label>
+                            <input type=date id="date" required></input>
+                            <br>
+                            <label><strong> Time :</strong></label>
+                            <input type="time" id="hour" required>
+                            
+                        </div>
+                        <footer>
+                        <div class="col" id="buttoms">
+                            <button type="button" class="btn btn-success" onclick=" checkValid()" onclick=" cleanForm()"
+                                id="save-btn">Save</button>
+                            <button type="button" class="btn btn-danger" onclick="cleanForm()"
+                                id="clear-btn">Clear Board</button>
+                        </div>
+                    </footer>
+
+                
+
+                </div>
+                    </form>
+
+            </div>
+
+        </main>
+        <div class="row" id="task-container">
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+    </script>
+</body>
+
+
+</html>
