@@ -1,5 +1,5 @@
 * {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 
 .myTitle {
@@ -8,144 +8,130 @@
   color: rgb(14, 48, 48);
 }
 
-
 #text-center {
-    margin: 25px auto 18px auto;
-    display: flex;  
-  }
-  
-  
-  body {
-    background-image: url(img/tile.jpg);
-  }
-  
+  margin: 25px auto 18px auto;
+  display: flex;
+}
 
-  #form {
-    margin-left: 21%;
-    background-image: url(img/forMbg.jpg);
-    max-width: 750px;
-  }
-  
+body {
+  background-image: url(img/tile.jpg);
+}
 
-  #task {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: 0px;
-    font-weight: 400;
-    padding-left: 80px;
-    padding-top: 20px;
-    font-size: 20px;
-    width: 90%;
-  }
-  
+#form {
+  margin-left: 21%;
+  background-image: url(img/forMbg.jpg);
+  max-width: 750px;
+}
 
-  #date {
-    background-color: transparent;
-    border: 0px;
-    font-weight: 400;
-    padding-left: 30px;
-    margin: 0px;
-    padding-top: 25px;
-    font-size: 20px;
-    top: 10%;
-  }
-  
+#task {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0px;
+  font-weight: 400;
+  padding-left: 80px;
+  padding-top: 20px;
+  font-size: 20px;
+  width: 90%;
+}
 
-  #hour {
-    background-color: transparent;
-    border: 0px;
-    font-weight: 400;
-    padding-left: 30px;
-    margin: 0px;
-    padding-top: 8px;
-    font-size: 20px;
-    top: 10%;
-  }
-  
-  #save-btn {
-    margin-left: 60%;
-    margin-bottom: 1%;
-  }
+#date {
+  background-color: transparent;
+  border: 0px;
+  font-weight: 400;
+  padding-left: 30px;
+  margin: 0px;
+  padding-top: 25px;
+  font-size: 20px;
+  top: 10%;
+}
 
+#hour {
+  background-color: transparent;
+  border: 0px;
+  font-weight: 400;
+  padding-left: 30px;
+  margin: 0px;
+  padding-top: 8px;
+  font-size: 20px;
+  top: 10%;
+}
 
-  #clear-btn {
-    left: 80%;
-    margin-bottom: 1%;
-  }
-  
+#save-btn {
+  margin-left: 60%;
+  margin-bottom: 1%;
+}
 
-  
-  .task {
-    background-image: url(img/noteBg.png);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    overflow: hidden;
-    height: 220px;
-    width: 200px;
-    background-repeat: no-repeat;
-    color: red;
-    padding-right: 20px;
-    margin-top: 20px;
+#clear-btn {
+  left: 80%;
+  margin-bottom: 1%;
+}
+
+.task {
+  background-image: url(img/noteBg.png);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  height: 220px;
+  width: 200px;
+  background-repeat: no-repeat;
+  color: red;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.fas {
+  position: relative;
+  top: 6px;
+  display: none;
+  cursor: pointer;
+}
+
+.task:hover .fas {
+  display: inline;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
   }
-  
-  .fade-in {
+  100% {
     opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
   }
-  
-  .fas {
-    position: relative;
-    top: 6px;
-    display: none;
-    cursor: pointer;
-  }
-  
-  .task:hover .fas {
-    display: inline;
-  }
-  
+}
 
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .paragraph-task {
-    font-size: 18px;
-    word-wrap: break-word;
-    max-width: 280px;
-    margin: 20px 3px 3px;
-    overflow-y: auto;
-    max-height: 105px;
-  }
-  
+.paragraph-task {
+  font-size: 18px;
+  word-wrap: break-word;
+  max-width: 280px;
+  margin: 20px 3px 3px;
+  overflow-y: auto;
+  max-height: 105px;
+}
 
-  #do-date {
-    margin-left: 13%;
-  }
-  
+#do-date {
+  margin-left: 13%;
+}
 
-  #removeBtn {
-    position: relative;
-    cursor: pointer;
-    top: 15px;
-    display: none;
-  }
-  
+#removeBtn {
+  position: relative;
+  cursor: pointer;
+  top: 15px;
+  display: none;
+}
 
-  .task:hover #removeBtn {
-    display: inline;
-  }
-  
-  
-  #buTTOms {
-    margin-top: 5%;
-  }
+.task:hover #removeBtn {
+  display: inline;
+}
+
+#buTTOms {
+  margin-top: 5%;
+}

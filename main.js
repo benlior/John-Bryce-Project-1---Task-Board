@@ -11,13 +11,13 @@ function reverseDate(date) {
 
 
 function isArr() {
-    if (JSON.parse(localStorage.getItem("tasks")) == null) {
-      arr = [];
-    } else {
-      arr = JSON.parse(localStorage.getItem("tasks"));
-    }
-    addTask();
+  if (JSON.parse(localStorage.getItem("tasks")) == null) {
+    arr = [];
+  } else {
+    arr = JSON.parse(localStorage.getItem("tasks"));
   }
+  addTask();
+}
 
 
 
@@ -25,7 +25,7 @@ function checkValid() {
   let taskInput = document.getElementById("task").value;
   let dateInput = document.getElementById("date").value;
 
-  
+
   if (taskInput == "") {
     alert('Please fill in all fields');
     document.getElementById()
@@ -87,7 +87,7 @@ function removeTask(newTask, task) {
       if (
         arr[i].content == task.content &&
         arr[i].date == task.date &&
-        arr[i].hour == task.hour 
+        arr[i].hour == task.hour
       ) {
         arr.splice(i, 1);
         i--;
@@ -144,4 +144,3 @@ function cleanForm() {
   const form = document.getElementById("form");
   form.reset();
 }
-
